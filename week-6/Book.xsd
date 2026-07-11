@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs.schema xmlns:xs="https://www.w3.org/2001/xml schema">
+<xs:element name ="book">
+	<xs:complexType>
+	<xs:Sequence>
+		<xs:element name="id" type="xs.integer"/>
+		<xs:element name="name" type="xs.string"/>
+		<xs:element name="no.of.pages" type="xs.integer"/>
+		<xs:element name="author" type="xs.string"/>
+		<xs:element name="price" type="xs.integer"/>
+	</xs:Sequence>
+	</xs:complexType>
+	</xs:element>
+	</xs.schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE book [
+    <!ELEMENT book (title, author, publisher, price)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT publisher (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+]>
+
+<book>
+    <title>Learning XML</title>
+    <author>John Smith</author>
+    <publisher>ABC Publications</publisher>
+    <price>499</price>
+</book>

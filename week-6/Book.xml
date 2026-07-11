@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="book.xsd">
+
+    <id>Learning XML</id>
+    <name>Tara</name>
+	<no.of.pages>250</no.of.pages>
+    <author>Viswa</author>
+    <price>499</price>
+
+</book>

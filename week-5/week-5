@@ -1,0 +1,55 @@
+<html>
+    <body bgcolor="pink" align="center">
+        <h3>JOB REGISTRATION FORM</h3>
+       <form>
+        username:<input type="text"placeholder="enter your name" id="one"><br>
+        email:<input type="text" placeholder="email" id="two"><br>
+        contactnumber:<input type="number" id="three"><br>
+        <input type="submit" onclick="return validate()">
+        </form>
+        <script>
+            function validate()
+        {
+            var un=document.getElementById("one");
+            var uname=un.value;
+            var mail=document.getElementById("two");
+            var email=mail.value;
+            var mn=document.getElementById("three");
+            var mobile=mn.value;
+            var unre=/^[a-zA-Z]+[0-9a-zA-Z._]*$/;
+            var ere=/^[a-zA-Z]+([\.]?\w+)*@\w+([\._]?\w)*(\.\w{2,3})+$/;
+            var mre=/^[6-9][0-9]{9}$/;
+            if(unre.test(uname))
+            {
+                if(ere.test(email))
+                {
+                    if(mre.test(mobile))
+                    {
+                    alert("Registered sucessfully");
+                    return true;
+                    }
+                    else{
+                    return error(mn);
+                    }
+                }
+                    else{
+                    return error(mail);
+                    }
+                }        
+                    else{
+                    return error(un);
+                    } 
+    }
+        function error(ele)
+        {
+            alert("Invalid");
+            ele.style.border="2px solid red";
+            ele.value="";
+            ele.placeholder="Invalid";
+            ele.focus();
+            return false;
+        }
+            </script>
+
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            input[type=text]{
+                width:100%;
+                background-color:plum;
+                color:white;
+                border:2px solid;
+                padding:15px;
+            }
+            input[type=number]{
+                width:100%;
+                background-color:purple;
+                color:white;
+                border:2px solid;
+                padding:15px;
+            }
+            input[type=button]{
+                height:30px;
+                background-color:mediumturquoise;
+                color:white;
+                border:2px solid;
+                margin-top:50px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <form>
+            Name:<input type="text" placeholder="enter your name">
+            Occupation:<input type="text" placeholeder="enter your occupation">
+            Amount:<input type="number" placeholder="enter the loan amount" id="amount">
+            Rate of intrest:<input type="number" placeholder="enter ROI" id="roi">
+            Tenure<input type="number" placeholder="enter number of year" id="tenure">
+            <input type="button" value="caluculate EMI" onclick="caluculate()">
+        </form>
+        <p id="result"></p>
+        <script>
+            function caluculate(){
+            var A=document.getElementById("amount").value;
+            var intrest=document.getElementById("roi").value;
+            var years=document.getElementById("tenure").value;
+            var months=years*12;
+            var R=intrest/(12*100);
+            var emi=A*R*Math.pow(1+R,months)/(Math.pow(1+R,months)-1);
+            document.getElementById("result").innerHTML="<h2> Your Emi is:</h2>"+emi.toFixed(2);
+            }
+        </script>
+        <h3 align="right">K.shiva prasanna </h3>
+     <h3 align="right">24881A1297</h3>
+    </body>
+</html>

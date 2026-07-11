@@ -1,0 +1,7 @@
+
+<!ELEMENT Book (id,name,no.of.pages,author,price)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT no.of.pages (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
